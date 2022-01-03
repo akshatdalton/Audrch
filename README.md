@@ -14,3 +14,16 @@ Upload an audio and check which song is it!
 - Dataset: [Kaggle dataset of songs in Spotify](https://www.kaggle.com/mrmorj/dataset-of-songs-in-spotify)
 
 Made with ❤️
+
+## How to use?
+- Download the AudioCLIP model by running:
+
+```
+bash scripts/download_models.sh
+```
+
+- Run the app:
+
+```
+python app.py
+```
