@@ -4,15 +4,20 @@ from collections import defaultdict
 
 from jina import Document, DocumentArray, Executor, requests
 
+count = 0
 
 class AudioSegmenter(Executor):
-    def __init__(self, window_size: float = 1.0, stride: float = 1.0, *args, **kwargs):
+    def __init__(self, window_size: float = 1, stride: float = 1, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.window_size = window_size  # seconds
         self.stride = stride
 
     @requests(on=["/index", "/search"])
     def segment(self, docs: DocumentArray, **kwargs):
+        global count
+        if count == 0:
+            print("1 docs = ", docs)
+            count += 1
         for idx, doc in enumerate(docs):
             try:
                 doc.blob, sample_rate = lr.load(doc.uri, sr=16000)
@@ -43,6 +48,10 @@ class AudioSegmenter(Executor):
 class MyRanker(Executor):
     @requests(on="/search")
     def rank(self, docs: DocumentArray = None, **kwargs):
+        global count
+        if count == 1:
+            print("2 docs = ", docs)
+            count += 1
         for doc in docs.traverse_flat(("r",)):
             parents_scores = defaultdict(list)
             parents_match = defaultdict(list)
