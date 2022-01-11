@@ -3,7 +3,7 @@ from helper import get_matches
 
 st.set_page_config(page_title="Jina Audio Search")
 
-st.title("Shazam")
+st.title("Audrch")
 
 uploaded_file = st.file_uploader("Choose a file")
 if uploaded_file is not None:
