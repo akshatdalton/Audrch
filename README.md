@@ -22,8 +22,14 @@ Made with ❤️
 bash scripts/download_models.sh
 ```
 
-- Run the app:
+- Run the backend:
 
 ```
 python app.py
+```
+
+- In another terminal, run streamlit:
+
+```
+python client/app.py
 ```
