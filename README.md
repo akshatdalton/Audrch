@@ -31,5 +31,7 @@ python app.py
 - In another terminal, run streamlit:
 
 ```
-python client/app.py
+streamlit run client/app.py
 ```
+
+Now, head over to `http://localhost:8501` and you can query songs/audio of your choice!
