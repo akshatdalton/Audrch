@@ -22,6 +22,18 @@ Made with ❤️
 bash scripts/download_models.sh
 ```
 
+Create a virtual environment
+
+```
+python -m venv audrch-venv
+```
+
+Activate the virtual environment
+
+```
+source audrch-venv/bin/activate
+```
+
 - Run the backend:
 
 ```
