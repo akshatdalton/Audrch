@@ -11,7 +11,7 @@ executors:
       py_modules:
           - executors.py
     - name: "encoder"
-      uses: "jinahub+docker://VGGishAudioEncoder"
+      uses: "jinahub+docker://VGGishAudioEncoder/v0.4"
       uses_with:
           traversal_paths: ["c"]
           load_input_from: "waveform"
@@ -19,7 +19,7 @@ executors:
       volumes:
           - "./models:/workspace/models"
     - name: "indexer"
-      uses: "jinahub+docker://SimpleIndexer"
+      uses: "jinahub+docker://SimpleIndexer/v0.11"
       uses_with:
           match_args:
               limit: 5
