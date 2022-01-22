@@ -31,6 +31,9 @@ def save_song_from_track(sp, track_id):
 
 
 def generate_data():
+    if not os.path.exists("data"):
+        os.makedirs("data")
+
     if len(os.listdir("data")) != 0:
         print("Data alredy present")
         return
@@ -41,7 +44,7 @@ def generate_data():
     sp = spotipy.Spotify(auth_manager=auth_manager)
 
     with open("genres_v2.csv") as f:
-        TOTAL_LIMIT = 10
+        TOTAL_LIMIT = 15
         curr_limit = 0
         csv_reader = csv.DictReader(f)
         for row in csv_reader:
