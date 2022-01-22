@@ -38,11 +38,22 @@ source audrch-venv/bin/activate
 Download and unzip `genres_v2.csv.zip` from [Kaggle dataset of songs in Spotify](https://www.kaggle.com/mrmorj/dataset-of-songs-in-spotify).
 
 
+Follow instructions from [here]https://developer.spotify.com/documentation/general/guides/authorization/app-settings) to obtain `SPOTIPY_CLIENT_ID` and `SPOTIPY_CLIENT_SECRET`.<br>
+
+Set the environment variables (can follow [this guide](https://spotipy.readthedocs.io/en/2.19.0/#client-credentials-flow) also):
+```
+export SPOTIPY_CLIENT_ID='your-spotify-client-id'
+export SPOTIPY_CLIENT_SECRET='your-spotify-client-secret'
+```
+
+
 - Run the backend:
 
 ```
 python app.py
 ```
+
+You can tweak `TOTAL_LIMIT` in `app.py:generate_data` to control the number of training samples.
 
 - In another terminal, run streamlit:
 
