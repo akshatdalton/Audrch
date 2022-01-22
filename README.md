@@ -16,11 +16,11 @@ Upload an audio and check which song is it!
 Made with ❤️
 
 ## How to use?
-- Download the AudioCLIP model by running:
+<!-- - Download the AudioCLIP model by running:
 
 ```
 bash scripts/download_models.sh
-```
+``` -->
 
 Create a virtual environment
 
@@ -33,6 +33,10 @@ Activate the virtual environment
 ```
 source audrch-venv/bin/activate
 ```
+
+
+Download and unzip `genres_v2.csv.zip` from [Kaggle dataset of songs in Spotify](https://www.kaggle.com/mrmorj/dataset-of-songs-in-spotify).
+
 
 - Run the backend:
 
