@@ -35,10 +35,10 @@ source audrch-venv/bin/activate
 ```
 
 
-Download and unzip `genres_v2.csv.zip` from [Kaggle dataset of songs in Spotify](https://www.kaggle.com/mrmorj/dataset-of-songs-in-spotify).
+Download and unzip `genres_v2.csv.zip` from [Kaggle dataset of songs in Spotify](https://www.kaggle.com/mrmorj/dataset-of-songs-in-spotify) and put the file in the same directory as that of `backend/app.py`.
 
 
-Follow instructions from [here]https://developer.spotify.com/documentation/general/guides/authorization/app-settings) to obtain `SPOTIPY_CLIENT_ID` and `SPOTIPY_CLIENT_SECRET`.<br>
+Follow instructions from [here](https://developer.spotify.com/documentation/general/guides/authorization/app-settings) to obtain `SPOTIPY_CLIENT_ID` and `SPOTIPY_CLIENT_SECRET`.<br>
 
 Set the environment variables (can follow [this guide](https://spotipy.readthedocs.io/en/2.19.0/#client-credentials-flow) also):
 ```
