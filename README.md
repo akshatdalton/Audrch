@@ -1,5 +1,5 @@
 # Audrch
-Audrch (Audio + Search) - Using this project one can enter an audio and search which song it it! The project is make using Jina AI which is a neural search engine.
+Audrch (Audio + Search) - Using this project one can enter an audio and search which song it is! The project is made using Jina AI which is a neural search engine.
 Check the original issue [here](https://github.com/jina-ai/jina/issues/3650).
 
 ## Idea:
