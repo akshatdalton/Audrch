@@ -1,5 +1,5 @@
 # Audrch
-Audrch (Audio + Search) - Using this project one can enter an audio and search which song it is! The project is made using Jina AI which is a neural search engine.
+Audrch (Audio + Search) - Using this project one can enter an audio and search which song it is! The project is made using Jina AI which is a neural search framework.
 Check the original issue [here](https://github.com/jina-ai/jina/issues/3650).
 
 ## Idea:
@@ -16,11 +16,8 @@ Upload an audio and check which song is it!
 Made with ❤️
 
 ## How to use?
-<!-- - Download the AudioCLIP model by running:
 
-```
-bash scripts/download_models.sh
-``` -->
+Note: You must have `python >= 3.7`.
 
 Create a virtual environment
 
